@@ -1,7 +1,7 @@
 # Circuit & Sky
 
 A Create-focused modpack for **Minecraft 1.21.1** on **NeoForge**: airships, trains, electricity and diesel power,
-plus a performance setup that keeps big factories smooth and Distant Horizons for long view distances.
+plus a performance setup that keeps big factories smooth.
 
 [![Latest release](https://img.shields.io/github/v/release/ark4660/CircuitSkyReleases?label=latest&color=5fd068)](https://github.com/ark4660/CircuitSkyReleases/releases/latest)
 ![Minecraft 1.21.1](https://img.shields.io/badge/Minecraft-1.21.1-5ba8ff)
@@ -16,8 +16,7 @@ plus a performance setup that keeps big factories smooth and Distant Horizons fo
   (electricity), Diesel Generators, Power Loader (chunk loaders), Jetpack, Deco, Connected, Central Kitchen,
   Dreams & Desires
 - **Performance:** Sodium, ModernFix, FerriteCore, ImmediatelyFast, Entity Culling, BadOptimizations, Dynamic FPS
-- **View distance:** Distant Horizons
-- **Quality of life:** JEI, Xaero's Minimap, Forgematica (Litematica), Pro Placer, Nature's Compass, Better Clouds,
+- **Quality of life:** JEI, Xaero's Minimap, Pro Placer, Nature's Compass, Better Clouds,
   Fullbright, and a custom FancyMenu title screen
 
 Full list with versions and licenses: [MODS.md](MODS.md)
@@ -47,19 +46,16 @@ instance. (The Circuit & Sky Launcher does this for you and keeps your keybinds 
 | Minecraft | Java Edition 1.21.1 |
 | Loader | NeoForge 21.1 (installed automatically) |
 | Java | 21 (Prism, the Modrinth App and the Circuit & Sky Launcher download it for you) |
-| Memory | 6–8 GB for the game. More than about 10 GB can make stutter worse |
-| Download | About 50 MB for the pack, then about 150 MB of mods from Modrinth on first install |
+| Memory | 4–6 GB for the game. More than about 10 GB can make stutter worse |
+| Download | About 10 MB for the pack, then about 115 MB of mods from Modrinth on first install |
 
 ## Performance tips
 
-- Keep the normal render distance at **8–12 chunks** and let Distant Horizons draw the far terrain.
-- If the game stutters while flying or on trains, lower Distant Horizons' quality preset and CPU thread count in its
-  settings.
+- The pack starts at a render distance of **12 chunks**. Raise it if your PC keeps up; large Create builds and
+  trains in view cost the most.
+- If big factories lag, turn down **Graphics → Entity distance** in Video Settings. Entity Culling already skips
+  machines you can't see.
 - Dynamic FPS lowers the frame rate while the game is in the background, so alt-tabbing won't heat up your PC.
-
-## Known issues
-
-- Better Clouds doesn't support Distant Horizons 3 yet, so its clouds don't blend with far terrain.
 
 ## Credits
 
@@ -70,9 +66,13 @@ configs and menu assets.
 
 ## For maintainers: publishing a release
 
-1. In Prism, right-click the instance → **Export** → **Modrinth (.mrpack)**. Untick `saves`, `logs`, `screenshots`
-   and other personal folders. Bump the version number.
-2. Name the file exactly `CircuitSky.mrpack`. The launcher and the download link above use that name.
+1. Build the pack from the Prism instance:
+   `python3 scripts/build_mrpack.py ~/.local/share/PrismLauncher/instances/1.21.1 X.Y.Z`
+   It links every mod from Modrinth and skips worlds, logs, screenshots, schematics, the server list and other
+   personal files. (Prism's **Export → Modrinth** works too; untick those folders and name the file exactly
+   `CircuitSky.mrpack`, which the launcher and the download link above rely on.)
+2. Test it: import it into Prism as a new instance, or `LAUNCHER_PACK_CIRCUIT_SKY=/path/to/CircuitSky.mrpack npm start`
+   in the launcher.
 3. Refresh the mod list: `python3 scripts/modlist.py CircuitSky.mrpack`, then add a section to `CHANGELOG.md`.
 4. Commit, then create a release tagged `vX.Y.Z` with `CircuitSky.mrpack` attached, and paste the changelog section
    as its notes:

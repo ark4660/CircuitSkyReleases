@@ -1,6 +1,8 @@
 # Mods
 
-38 mods. Client/Server shows whether a mod is needed on each side.
+Generated from **Circuit and Sky (Gen 1) 1.1.0** · Minecraft 1.21.1 · NeoForge 21.1.248
+
+35 mods. Client/Server shows whether a mod is needed on each side.
 
 ## Create
 
@@ -26,7 +28,6 @@
 | Mod | Version | What it does | Client | Server | License |
 |---|---|---|---|---|---|
 | [BadOptimizations](https://modrinth.com/mod/badoptimizations) | 2.4.1 | Optimization mod that focuses on things other than rendering | ✔ | — | MIT |
-| [Distant Horizons](https://modrinth.com/mod/distanthorizons) | 3.0.1-b-1.21.1 | Massively increase render distance without harming performance. | optional | optional | LGPL-3.0-only |
 | [Dynamic FPS](https://modrinth.com/mod/dynamic-fps) | 3.11.4 | Reduce resource usage while Minecraft is in the background, idle, or on battery. | ✔ | — | MIT |
 | [Entity Culling](https://modrinth.com/mod/entityculling) | 1.11.3 | Using async path-tracing to hide Block-/Entities that are not visible | ✔ | — | tr7zw-Protective-License |
 | [FerriteCore](https://modrinth.com/mod/ferrite-core) | 7.0.3-neoforge | Memory usage optimizations | optional | optional | MIT |
@@ -48,7 +49,6 @@
 
 | Mod | Version | What it does | Client | Server | License |
 |---|---|---|---|---|---|
-| [Forgematica](https://modrinth.com/mod/forgematica) | 0.4.3+mc1.21.1 | Litematica unofficial (Neo)Forge port. A modern client-side schematic mod for Minecraft. | ✔ | — | LGPL-3.0-only |
 | [Nature's Compass](https://modrinth.com/mod/natures-compass) | 1.21.1-3.4.0-neoforge | Allows you to locate biomes anywhere in the world. | ✔ | ✔ | CC-BY-NC-SA-4.0 |
 | [Pro Placer](https://modrinth.com/mod/pro-placer) | v21.1.1-1.21.1-NeoForge | Bedrock Edition-like easy and accurate block placement and breaking plus reach-around placement for fast bridging. | ✔ | — | MPL-2.0 |
 
@@ -60,7 +60,6 @@
 | [bad packets](https://modrinth.com/mod/badpackets) | neo-0.8.2 | Bad Packets allows packet messaging between different modding platforms. | optional | optional | Apache-2.0 |
 | [Konkrete](https://modrinth.com/mod/konkrete) | 1.9.9-1.21-neoforge | Just another boring library mod. | optional | optional | Apache-2.0 |
 | [Kotlin for Forge](https://modrinth.com/mod/kotlin-for-forge) | 5.12.0 | Adds a Kotlin language loader and provides some optional utilities. | optional | optional | LGPL-2.1-only |
-| [MaFgLib](https://modrinth.com/mod/mafglib) | 0.4.3+mc1.21.1 | MaLiLib unofficial forge port. Library mod for the (Neo)Forge port of masa's mods. | ✔ | — | LGPL-3.0-only |
 | [Melody](https://modrinth.com/mod/melody) | 1.0.10-1.21-neoforge | OpenAL-based library mod for playing background music. | ? | ? | MIT |
 | [Puzzles Lib](https://modrinth.com/mod/puzzles-lib) | v21.1.52-1.21.1-NeoForge | Why is it called Puzzles? That's the puzzle. | optional | optional | MPL-2.0 |
 | [YetAnotherConfigLib (YACL)](https://modrinth.com/mod/yacl) | 3.8.2+1.21.1-neoforge | A builder-based configuration library for Minecraft! | optional | optional | LGPL-3.0-or-later |
