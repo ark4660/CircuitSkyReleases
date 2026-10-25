@@ -1,0 +1,4 @@
+*.mrpack
+*.zip
+notes.md
+__pycache__/
